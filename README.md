@@ -1,10 +1,12 @@
-# Simple progress arc component for React
+## Simple progress arc component for React
 
-## Installation
+### [Demo](http://szastupov.github.io/progress-arc-component)
+
+### Installation
 
     yarn add progress-arc-component
 
-## Usage
+### Usage
 
 ```javascript
 import ProgressArc from 'progress-arc-component'
@@ -33,13 +35,13 @@ class Default extends Component {
 }
 ```
 
-### Properties
+#### Properties
 
 - `value` - Current progress
 - `max` - Maximum value
 - `unit` - Value unit (% by default)
 
-### Customization
+#### Customization
 
 ProgressArc generates SVG which can be style with styled-components:
 
@@ -60,7 +62,3 @@ const StyledProgressArc = styled(ProgressArc)`
   }
 `
 ```
-
-License
-=======
-MIT

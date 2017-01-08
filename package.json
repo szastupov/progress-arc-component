@@ -1,0 +1,20 @@
+{
+  "name": "progress-arc-component",
+  "version": "1.0.0",
+  "description": "Simple progress arc for React, customizable with styled-components",
+  "main": "src/ProgressArc.js",
+  "repository": "https://github.com/szastupov/progress-arc-component.git",
+  "author": "Stepan Zastupov <stepan.zastupov@gmail.com>",
+  "keywords": [
+    "react",
+    "progress",
+    "bar",
+    "progress",
+    "arc",
+    "styled-components"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "styled-components": "^1.2.1"
+  }
+}

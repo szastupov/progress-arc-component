@@ -43,7 +43,7 @@ class Default extends Component {
 
 #### Customization
 
-ProgressArc generates SVG which can be style with styled-components:
+ProgressArc generates SVG that can be styled with [styled-components][1]:
 
 ```javascript
 import styled from 'styled-components'
@@ -62,3 +62,5 @@ const StyledProgressArc = styled(ProgressArc)`
   }
 `
 ```
+
+[1]: https://github.com/styled-components/styled-components

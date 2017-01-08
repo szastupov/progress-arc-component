@@ -3,6 +3,12 @@ import ProgressArc from 'progress-arc-component'
 import styled from 'styled-components'
 import './Demo.css'
 
+const Code = ({text}) => (
+  <pre className="code">
+    {text}
+  </pre>
+)
+
 
 class Default extends Component {
   state = {
@@ -22,6 +28,7 @@ class Default extends Component {
           value={prog}
           onChange={e => this.setState({prog: e.target.value})}
         />
+        <Code text="<ProgressArc value={prog}/>"/>
       </div>
     )
   }
@@ -30,7 +37,7 @@ class Default extends Component {
 
 // ProgressArc is a styled component and can easily be restyled
 
-const StyledProgressArc = styled(ProgressArc)`
+const RedArc = styled(ProgressArc)`
   height: 12em;
   width: 12em;
   border: 0.3em solid black;
@@ -44,7 +51,25 @@ const StyledProgressArc = styled(ProgressArc)`
   }
 `
 
-class Yellow extends Component {
+// TODO: figure out something to avoid code duplication
+const styledCode = `const RedArc = styled(ProgressArc)\`
+  height: 12em;
+  width: 12em;
+  border: 0.3em solid black;
+  border-radius: 0.5em;
+  padding: 1em;
+  circle {
+    stroke: red;
+  }
+  text {
+    fill: black;
+  }
+\`
+
+<RedArc value={prog}/>
+`
+
+class Custom extends Component {
   state = {
     prog: 60
   }
@@ -55,19 +80,23 @@ class Yellow extends Component {
     return (
       <div className="col demo">
         <h3>Styled</h3>
-        <StyledProgressArc value={prog}/>
+        <RedArc value={prog}/>
         <input
           type="range"
           min="0" max="100"
           value={prog}
           onChange={e => this.setState({prog: e.target.value})}
         />
+        <Code text={styledCode}/>
       </div>
     )
   }
 }
 
 // You can pass max and unit values
+
+const unitsCode = `<ProgressArc
+  value={prog} max={64} unit="GB"/>`
 
 class Memory extends Component {
   state = {
@@ -87,6 +116,7 @@ class Memory extends Component {
           value={prog}
           onChange={e => this.setState({prog: e.target.value})}
         />
+        <Code text={unitsCode}/>
       </div>
     )
   }
@@ -96,10 +126,12 @@ class Memory extends Component {
 class App extends Component {
   render() {
     return (
-      <div className="row">
-        <Default/>
-        <Yellow/>
-        <Memory/>
+      <div>
+        <div className="row">
+          <Default/>
+          <Custom/>
+          <Memory/>
+        </div>
       </div>
     )
   }

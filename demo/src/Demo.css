@@ -1,4 +1,15 @@
 .demo {
   text-align: center;
-  margin: auto;
+  margin: 1em auto;
+}
+
+.code {
+  margin: 1em auto;
+  padding: 1em;
+  text-align: left;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
 }

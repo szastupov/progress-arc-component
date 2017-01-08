@@ -59,28 +59,6 @@ const StyledProgressArc = styled(ProgressArc)`
     fill: black;
   }
 `
-
-class Yellow extends Component {
-  state = {
-    prog: 60
-  }
-
-  render() {
-    let { prog } = this.state
-
-    return (
-      <div>
-        <StyledProgressArc value={prog}/>
-        <input
-          type="range"
-          min="0" max="100"
-          value={prog}
-          onChange={e => this.setState({prog: e.target.value})}
-        />
-      </div>
-    )
-  }
-}
 ```
 
 License

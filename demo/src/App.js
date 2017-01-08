@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './App.css'
 import ProgressArc from 'progress-arc-component'
 import styled from 'styled-components'
+import './Demo.css'
 
 
 class Default extends Component {
@@ -13,7 +13,8 @@ class Default extends Component {
     let { prog } = this.state
 
     return (
-      <div>
+      <div className="col demo">
+        <h3>Default</h3>
         <ProgressArc value={prog}/>
         <input
           type="range"
@@ -52,7 +53,8 @@ class Yellow extends Component {
     let { prog } = this.state
 
     return (
-      <div>
+      <div className="col demo">
+        <h3>Styled</h3>
         <StyledProgressArc value={prog}/>
         <input
           type="range"
@@ -76,7 +78,8 @@ class Memory extends Component {
     let { prog } = this.state
 
     return (
-      <div>
+      <div className="col demo">
+        <h3>Custom units</h3>
         <ProgressArc value={prog} max={64} unit="GB"/>
         <input
           type="range"
@@ -93,7 +96,7 @@ class Memory extends Component {
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="row">
         <Default/>
         <Yellow/>
         <Memory/>

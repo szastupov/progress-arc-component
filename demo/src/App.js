@@ -19,7 +19,7 @@ class Default extends Component {
     let { prog } = this.state
 
     return (
-      <div className="col demo">
+      <div className="col-md-4 demo">
         <h3>Default</h3>
         <ProgressArc value={prog}/>
         <input
@@ -78,7 +78,7 @@ class Custom extends Component {
     let { prog } = this.state
 
     return (
-      <div className="col demo">
+      <div className="col-md-4 demo">
         <h3>Styled</h3>
         <RedArc value={prog}/>
         <input
@@ -107,7 +107,7 @@ class Memory extends Component {
     let { prog } = this.state
 
     return (
-      <div className="col demo">
+      <div className="col-md-4 demo">
         <h3>Custom units</h3>
         <ProgressArc value={prog} max={64} unit="GB"/>
         <input

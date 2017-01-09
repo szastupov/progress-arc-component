@@ -125,10 +125,15 @@ class Memory extends Component {
 }
 
 
-class App extends Component {
+class Demo extends Component {
   render() {
     return (
       <div>
+
+        <div className="row">
+          <Code text={"import ProgressArc from 'progress-arc-component'"}/>
+        </div>
+
         <div className="row">
           <Default/>
           <Custom/>
@@ -139,4 +144,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default Demo

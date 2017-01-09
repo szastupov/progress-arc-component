@@ -17,29 +17,10 @@ With npm:
 ```javascript
 import ProgressArc from 'progress-arc-component'
 
-class Default extends Component {
-  state = {
-    prog: 50
-  }
-
-  render() {
-    let { prog } = this.state
-
-    return (
-      <div>
-        <ProgressArc value={prog}/>
-
-        <input
-          type="range"
-          min="0" max="100"
-          value={prog}
-          onChange={e => this.setState({prog: e.target.value})}
-        />
-      </div>
-    )
-  }
-}
+<ProgressArc value={63}/>
 ```
+
+![ProgressArc screenshot](http://i.imgur.com/vgxgdi9.png)
 
 ### Properties
 

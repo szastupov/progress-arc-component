@@ -1,6 +1,4 @@
-# Simple progress arc for React
-
-## [Demo](http://szastupov.github.io/progress-arc-component)
+# Simple progress arc for React ([demo](http://szastupov.github.io/progress-arc-component))
 
 ## Installation
 

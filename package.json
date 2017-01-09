@@ -1,6 +1,6 @@
 {
   "name": "progress-arc-component",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Simple progress arc for React, customizable with styled-components",
   "main": "lib/ProgressArc.js",
   "repository": "https://github.com/szastupov/progress-arc-component.git",

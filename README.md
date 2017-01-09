@@ -4,10 +4,6 @@
 
     $ yarn add progress-arc-component
 
-    # or
-
-    $ npm install --save progress-arc-component
-
 ## Usage
 
 ```javascript

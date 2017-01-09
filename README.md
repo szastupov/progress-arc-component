@@ -49,7 +49,7 @@ class Default extends Component {
 - `arcColor` - Progress arc color (#818a91)
 - `arcBackgroundColor` - Arc background color (#eceeef)
 - `textColor` - Text color (#818a91)
-- `rounded` - Draw rounded corners for arc (false)
+- `rounded` - Draw rounded corners (false)
 
 ### Customization
 

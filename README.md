@@ -2,11 +2,9 @@
 
 ## Installation
 
-With yarn:
-
     $ yarn add progress-arc-component
 
-With npm:
+    # or
 
     $ npm install --save progress-arc-component
 

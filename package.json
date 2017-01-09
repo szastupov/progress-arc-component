@@ -30,6 +30,7 @@
   },
   "scripts": {
     "build": "babel src -d lib",
+    "dev": "babel -w src -d lib",
     "prepublish": "npm run build"
   }
 }

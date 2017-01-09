@@ -44,8 +44,12 @@ class Default extends Component {
 ### Properties
 
 - `value` - Current progress
-- `max` - Maximum value
-- `unit` - Value unit (% by default)
+- `max` - Maximum value (100)
+- `unit` - Value unit (%)
+- `arcColor` - Progress arc color (#818a91)
+- `arcBackgroundColor` - Arc background color (#eceeef)
+- `textColor` - Text color (#818a91)
+- `rounded` - Draw rounded corners for arc (false)
 
 ### Customization
 
@@ -60,12 +64,6 @@ const StyledProgressArc = styled(ProgressArc)`
   border: 0.3em solid black;
   border-radius: 0.5em;
   padding: 1em;
-  circle {
-    stroke: red;
-  }
-  text {
-    fill: black;
-  }
 `
 ```
 

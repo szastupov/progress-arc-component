@@ -43,30 +43,25 @@ const RedArc = styled(ProgressArc)`
   border: 0.3em solid black;
   border-radius: 0.5em;
   padding: 1em;
-  circle {
-    stroke: red;
-  }
-  text {
-    fill: black;
-  }
 `
 
 // TODO: figure out something to avoid code duplication
-const styledCode = `const RedArc = styled(ProgressArc)\`
+const styledCode = `// With styled-components
+const RedArc = styled(ProgressArc)\`
   height: 12em;
   width: 12em;
   border: 0.3em solid black;
   border-radius: 0.5em;
   padding: 1em;
-  circle {
-    stroke: red;
-  }
-  text {
-    fill: black;
-  }
 \`
 
-<RedArc value={prog}/>
+// By passing common props
+<RedArc
+  value={prog}
+  arcColor="red"
+  textColor="black"
+  rounded={true}
+/>
 `
 
 class Custom extends Component {
@@ -80,7 +75,14 @@ class Custom extends Component {
     return (
       <div className="col-md-4 demo">
         <h3>Styled</h3>
-        <RedArc value={prog}/>
+
+        <RedArc
+          value={prog}
+          arcColor="red"
+          textColor="black"
+          rounded={true}
+        />
+
         <input
           type="range"
           min="0" max="100"

@@ -25,12 +25,15 @@
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
+    "jest": "^18.1.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-test-renderer": "^15.4.2"
   },
   "scripts": {
     "build": "babel src -d lib",
     "dev": "babel -w src -d lib",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "jest"
   }
 }

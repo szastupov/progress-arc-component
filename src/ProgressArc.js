@@ -57,7 +57,7 @@ function ProgressArc({
       />
 
       <text x="100" y="115">
-        {value}{unit}
+        { textVisible ? {`${value} ${unit}`} : null }
       </text>
     </Svg>
   )
@@ -70,6 +70,7 @@ ProgressArc.propTypes = {
   arcColor: PropTypes.string,
   arcBackgroundColor: PropTypes.string,
   textColor: PropTypes.string,
+  textVisible: PropTypes.bool,
   radius: PropTypes.number,
   rounded: PropTypes.bool
 }
@@ -81,6 +82,7 @@ ProgressArc.defaultProps = {
   arcColor: '#818a91',
   arcBackgroundColor: '#eceeef',
   textColor: '#818a91',
+  textVisible: true,
   radius: 90,
   rounded: false
 }

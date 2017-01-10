@@ -33,7 +33,8 @@ const Svg = styled.svg`
 
 function ProgressArc({
   value, max, className, unit,
-  arcColor, arcBackgroundColor, textColor, radius, rounded
+  arcColor, arcBackgroundColor,
+  textColor, textVisible, radius, rounded
 }) {
   const p = 2 * radius * Math.PI
   return (

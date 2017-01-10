@@ -56,9 +56,9 @@ function ProgressArc({
         strokeDasharray={p}
       />
 
-      <text x="100" y="115">
-        { textVisible ? {`${value} ${unit}`} : null }
-      </text>
+      {
+        textVisible ? <text x="100" y="115">{`${value} ${unit}`}</text> : null
+      }
     </Svg>
   )
 }

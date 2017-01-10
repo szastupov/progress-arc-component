@@ -18,15 +18,15 @@ import ProgressArc from 'progress-arc-component'
 
  Name                 | Description          | Default
  -------------------- | -------------------- | -------
- `value`              | Current progress     | 0
- `max`                | Maximum value        | 100
- `unit`               | Value unit           | %
- `arcColor`           | Progress arc color   | #818a91
- `arcBackgroundColor` | Arc background color | #eceeef
- `textColor`          | Text color           | #818a91
- `textVisible`        | Show text inside arc | true
- `radius`             | Arc radius           | 90
- `rounded`            | Draw rounded corners | false
+ *value*              | Current progress     | 0
+ *max*                | Maximum value        | 100
+ *unit*               | Value unit           | %
+ *arcColor*           | Progress arc color   | #818a91
+ *arcBackgroundColor* | Arc background color | #eceeef
+ *textColor*          | Text color           | #818a91
+ *textVisible*        | Show text inside arc | true
+ *radius*             | Arc radius           | 90
+ *rounded*            | Draw rounded corners | false
 
 ### Customization
 

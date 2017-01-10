@@ -13,7 +13,7 @@ exports[`test renders renders custom units 1`] = `
   <text
     x="100"
     y="115">
-    42 GB
+    42GB
   </text>
 </svg>
 `;
@@ -33,7 +33,7 @@ exports[`test renders renders custom units 2`] = `
   <text
     x="100"
     y="115">
-    42 GB
+    42GB
   </text>
 </svg>
 `;
@@ -53,7 +53,7 @@ exports[`test renders renders value 1`] = `
   <text
     x="100"
     y="115">
-    42 %
+    42%
   </text>
 </svg>
 `;
@@ -73,7 +73,7 @@ exports[`test renders with custom colors 1`] = `
   <text
     x="100"
     y="115">
-    99 %
+    99%
   </text>
 </svg>
 `;

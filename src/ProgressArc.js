@@ -58,7 +58,7 @@ function ProgressArc({
       />
 
       {
-        textVisible ? <text x="100" y="115">{`${value} ${unit}`}</text> : null
+        textVisible ? <text x="100" y="115">{`${value}${unit}`}</text> : null
       }
     </Svg>
   )

@@ -8,17 +8,12 @@ it('renders with default props', () => {
   ReactDOM.render(<ProgressArc/>, div)
 })
 
-it('renders renders value', () => {
+it('renders value', () => {
   const tree = renderer.create(<ProgressArc value={42}/>)
   expect(tree).toMatchSnapshot()
 })
 
-it('renders renders custom units', () => {
-  const tree = renderer.create(<ProgressArc value={42} unit='GB' max={64}/>)
-  expect(tree).toMatchSnapshot()
-})
-
-it('renders renders custom units', () => {
+it('renders custom units', () => {
   const tree = renderer.create(<ProgressArc value={42} unit='GB' max={64}/>)
   expect(tree).toMatchSnapshot()
 })
@@ -32,5 +27,10 @@ it('renders with custom colors', () => {
       rounded={true}
     />
   )
+  expect(tree).toMatchSnapshot()
+})
+
+it('disables text', () => {
+  const tree = renderer.create(<ProgressArc value={42} textVisible={false}/>)
   expect(tree).toMatchSnapshot()
 })

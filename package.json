@@ -36,5 +36,8 @@
     "prepublish": "npm run build",
     "test": "jest",
     "test:update": "jest -u"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["/node_modules/", "/lib/"]
   }
 }

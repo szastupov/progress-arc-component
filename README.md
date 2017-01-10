@@ -17,7 +17,7 @@ import ProgressArc from 'progress-arc-component'
 ### Properties
 
  Name                 | Description          | Default
- -------------------- | -------------------- | -------
+ :------------------- | :------------------- | :------
  *value*              | Current progress     | 0
  *max*                | Maximum value        | 100
  *unit*               | Value unit           | %

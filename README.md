@@ -1,4 +1,4 @@
-# Simple progress arc for React ([demo](http://szastupov.github.io/progress-arc-component))
+# Simple progress arc for React ([demo](http://szastupov.github.io/progress-arc-component)) [![NPM version][npm-image]][npm-link] [![Build status][travis-image]][travis-link]
 
 ## Installation
 
@@ -40,4 +40,9 @@ const StyledProgressArc = styled(ProgressArc)`
 `
 ```
 
+
 [1]: https://github.com/styled-components/styled-components
+[npm-image]: https://img.shields.io/npm/v/progress-arc-component.svg?style=flat
+[npm-link]: https://npmjs.org/package/progress-arc-component
+[travis-image]: https://img.shields.io/travis/szastupov/progress-arc-component.svg?style=flat
+[travis-link]: https://travis-ci.org/szastupov/progress-arc-component

@@ -1,0 +1,83 @@
+exports[`test renders renders custom units 1`] = `
+<svg
+  className="dbAdOF"
+  viewBox="0 0 200 200">
+  <circle
+    className="arc-background"
+    r={90} />
+  <circle
+    className="arc"
+    r={90}
+    strokeDasharray={565.4866776461628}
+    strokeDashoffset={194.38604544086846} />
+  <text
+    x="100"
+    y="115">
+    42
+    GB
+  </text>
+</svg>
+`;
+
+exports[`test renders renders custom units 2`] = `
+<svg
+  className="dbAdOF"
+  viewBox="0 0 200 200">
+  <circle
+    className="arc-background"
+    r={90} />
+  <circle
+    className="arc"
+    r={90}
+    strokeDasharray={565.4866776461628}
+    strokeDashoffset={194.38604544086846} />
+  <text
+    x="100"
+    y="115">
+    42
+    GB
+  </text>
+</svg>
+`;
+
+exports[`test renders renders value 1`] = `
+<svg
+  className="dbAdOF"
+  viewBox="0 0 200 200">
+  <circle
+    className="arc-background"
+    r={90} />
+  <circle
+    className="arc"
+    r={90}
+    strokeDasharray={565.4866776461628}
+    strokeDashoffset={327.9822730347744} />
+  <text
+    x="100"
+    y="115">
+    42
+    %
+  </text>
+</svg>
+`;
+
+exports[`test renders with custom colors 1`] = `
+<svg
+  className="eWxLhv"
+  viewBox="0 0 200 200">
+  <circle
+    className="arc-background"
+    r={90} />
+  <circle
+    className="arc"
+    r={90}
+    strokeDasharray={565.4866776461628}
+    strokeDashoffset={5.654866776461628} />
+  <text
+    x="100"
+    y="115">
+    99
+    %
+  </text>
+</svg>
+`;

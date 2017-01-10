@@ -22,7 +22,7 @@ import ProgressArc from 'progress-arc-component'
 - `arcColor` - Progress arc color (#818a91)
 - `arcBackgroundColor` - Arc background color (#eceeef)
 - `textColor` - Text color (#818a91)
-- `textVisible` - Toggle the text inside the Arc (true)
+- `textVisible` - Show text inside the arc (true)
 - `radius` - Set the radius of the arc (90)
 - `rounded` - Draw rounded corners (false)
 

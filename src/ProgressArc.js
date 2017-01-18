@@ -54,12 +54,10 @@ function ProgressArc({
         className="arc"
         r={radius}
         strokeDashoffset={((max - value) / max) * p}
-        strokeDasharray={p}
-      />
+        strokeDasharray={p}/>
 
-      {
-        textVisible ? <text x="100" y="115">{`${value}${unit}`}</text> : null
-      }
+      {textVisible &&
+        <text x="100" y="115">{`${value}${unit}`}</text>}
     </Svg>
   )
 }

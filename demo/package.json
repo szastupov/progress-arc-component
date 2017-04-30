@@ -7,9 +7,10 @@
     "react-scripts": "0.8.4"
   },
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "styled-components": "^1.2.1"
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "styled-components": "^1.4.5"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -34,8 +34,9 @@ exports[`renders custom units 1`] = `
     strokeDashoffset={194.38604544086846}
   />
   <text
+    dominantBaseline="middle"
     x="100"
-    y="115"
+    y="100"
   >
     42GB
   </text>
@@ -58,8 +59,9 @@ exports[`renders value 1`] = `
     strokeDashoffset={327.9822730347744}
   />
   <text
+    dominantBaseline="middle"
     x="100"
-    y="115"
+    y="100"
   >
     42%
   </text>
@@ -82,8 +84,9 @@ exports[`renders with custom colors 1`] = `
     strokeDashoffset={5.654866776461628}
   />
   <text
+    dominantBaseline="middle"
     x="100"
-    y="115"
+    y="100"
   >
     99%
   </text>

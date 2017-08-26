@@ -35,7 +35,8 @@ const Svg = styled.svg`
 function ProgressArc({
   value, max, className, unit,
   arcColor, arcBackgroundColor,
-  textColor, textVisible, radius, rounded
+  textColor, textVisible, radius, rounded,
+  dominantBaseline
 }) {
   const p = 2 * radius * Math.PI
   return (
@@ -58,7 +59,7 @@ function ProgressArc({
         strokeDasharray={p}/>
 
       {textVisible &&
-        <text x="100" y="100" dominantBaseline="middle">{`${value}${unit}`}</text>}
+        <text x="100" y="100" dominantBaseline={dominantBaseline}>{`${value}${unit}`}</text>}
     </Svg>
   )
 }
@@ -84,7 +85,8 @@ ProgressArc.defaultProps = {
   textColor: '#818a91',
   textVisible: true,
   radius: 90,
-  rounded: false
+  rounded: false,
+  dominantBaseline: 'middle'
 }
 
 export default ProgressArc

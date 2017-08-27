@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
 
 const Svg = styled.svg`
   display: block;
@@ -21,7 +21,7 @@ const Svg = styled.svg`
 
   .arc {
     stroke: ${props => props.arcColor};
-    stroke-linecap: ${props => props.rounded ? 'round' : 'inherit'}
+    stroke-linecap: ${props => (props.rounded ? "round" : "inherit")};
   }
 
   text {
@@ -33,9 +33,16 @@ const Svg = styled.svg`
 `
 
 function ProgressArc({
-  value, max, className, unit,
-  arcColor, arcBackgroundColor,
-  textColor, textVisible, radius, rounded,
+  value,
+  max,
+  className,
+  unit,
+  arcColor,
+  arcBackgroundColor,
+  textColor,
+  textVisible,
+  radius,
+  rounded,
   dominantBaseline
 }) {
   const p = 2 * radius * Math.PI
@@ -46,20 +53,23 @@ function ProgressArc({
       arcBackgroundColor={arcBackgroundColor}
       textColor={textColor}
       rounded={rounded}
-      viewBox="0 0 200 200">
-
-      <circle
-        className="arc-background"
-        r={radius}/>
+      viewBox="0 0 200 200"
+    >
+      <circle className="arc-background" r={radius} />
 
       <circle
         className="arc"
         r={radius}
-        strokeDashoffset={((max - value) / max) * p}
-        strokeDasharray={p}/>
+        strokeDashoffset={(max - value) / max * p}
+        strokeDasharray={p}
+      />
 
       {textVisible &&
-        <text x="100" y="100" dominantBaseline={dominantBaseline}>{`${value}${unit}`}</text>}
+        <text
+          x="100"
+          y="100"
+          dominantBaseline={dominantBaseline}
+        >{`${value}${unit}`}</text>}
     </Svg>
   )
 }
@@ -79,14 +89,14 @@ ProgressArc.propTypes = {
 ProgressArc.defaultProps = {
   value: 0,
   max: 100,
-  unit: '%',
-  arcColor: '#818a91',
-  arcBackgroundColor: '#eceeef',
-  textColor: '#818a91',
+  unit: "%",
+  arcColor: "#818a91",
+  arcBackgroundColor: "#eceeef",
+  textColor: "#818a91",
   textVisible: true,
   radius: 90,
   rounded: false,
-  dominantBaseline: 'middle'
+  dominantBaseline: "middle"
 }
 
 export default ProgressArc

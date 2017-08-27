@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
-import ProgressArc from 'progress-arc-component'
-import styled from 'styled-components'
-import './Demo.css'
+import React, { Component } from "react"
+import ProgressArc from "progress-arc-component"
+import styled from "styled-components"
+import "./Demo.css"
 
-const Code = ({text}) => (
+const Code = ({ text }) =>
   <pre className="code">
     {text}
   </pre>
-)
-
 
 class Default extends Component {
   state = {
@@ -21,19 +19,19 @@ class Default extends Component {
     return (
       <div className="col-md-4 demo">
         <h3>Default</h3>
-        <ProgressArc value={prog}/>
+        <ProgressArc value={prog} />
         <input
           type="range"
-          min="0" max="100"
+          min="0"
+          max="100"
           value={prog}
-          onChange={e => this.setState({prog: e.target.value})}
+          onChange={e => this.setState({ prog: e.target.value })}
         />
-        <Code text="<ProgressArc value={prog}/>"/>
+        <Code text="<ProgressArc value={prog}/>" />
       </div>
     )
   }
 }
-
 
 // ProgressArc is a styled component and can easily be restyled
 
@@ -76,20 +74,16 @@ class Custom extends Component {
       <div className="col-md-4 demo">
         <h3>Styled</h3>
 
-        <RedArc
-          value={prog}
-          arcColor="red"
-          textColor="black"
-          rounded={true}
-        />
+        <RedArc value={prog} arcColor="red" textColor="black" rounded={true} />
 
         <input
           type="range"
-          min="0" max="100"
+          min="0"
+          max="100"
           value={prog}
-          onChange={e => this.setState({prog: e.target.value})}
+          onChange={e => this.setState({ prog: e.target.value })}
         />
-        <Code text={styledCode}/>
+        <Code text={styledCode} />
       </div>
     )
   }
@@ -111,33 +105,32 @@ class Memory extends Component {
     return (
       <div className="col-md-4 demo">
         <h3>Custom units</h3>
-        <ProgressArc value={prog} max={64} unit="GB"/>
+        <ProgressArc value={prog} max={64} unit="GB" />
         <input
           type="range"
-          min="0" max="64"
+          min="0"
+          max="64"
           value={prog}
-          onChange={e => this.setState({prog: e.target.value})}
+          onChange={e => this.setState({ prog: e.target.value })}
         />
-        <Code text={unitsCode}/>
+        <Code text={unitsCode} />
       </div>
     )
   }
 }
 
-
 class Demo extends Component {
   render() {
     return (
       <div>
-
         <div className="row">
-          <Code text={"import ProgressArc from 'progress-arc-component'"}/>
+          <Code text={"import ProgressArc from 'progress-arc-component'"} />
         </div>
 
         <div className="row">
-          <Default/>
-          <Custom/>
-          <Memory/>
+          <Default />
+          <Custom />
+          <Memory />
         </div>
       </div>
     )

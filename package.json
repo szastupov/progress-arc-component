@@ -1,7 +1,8 @@
 {
   "name": "progress-arc-component",
   "version": "2.6.0",
-  "description": "Simple progress arc for React, customizable with styled-components",
+  "description":
+    "Simple progress arc for React, customizable with styled-components",
   "main": "lib/ProgressArc.js",
   "repository": "https://github.com/szastupov/progress-arc-component.git",
   "author": "Stepan Zastupov <stepan.zastupov@gmail.com>",
@@ -15,7 +16,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "babel-preset-env": "^1.6.1",
     "styled-components": "^3.1.6"
   },
   "peerDependencies": {
@@ -25,10 +25,11 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
-    "lint-staged": "^6.1.0",
+    "lint-staged": "^7.0.0",
     "prettier": "^1.5.3",
     "prop-types": "^15.5.10",
     "react": "^16.2.0",
@@ -44,15 +45,9 @@
     "precommit": "lint-staged"
   },
   "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/lib/"
-    ]
+    "testPathIgnorePatterns": ["/node_modules/", "/lib/"]
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --no-semi --write",
-      "git add"
-    ]
+    "*.js": ["prettier --no-semi --write", "git add"]
   }
 }
